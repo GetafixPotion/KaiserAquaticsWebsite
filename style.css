@@ -179,9 +179,10 @@
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #fff; Or any color that contrasts with your background} */
+  background-color: #fff; 
+  } */
 .logo-img {
-  height: 50px;      /* or adjust to 40px, 60px depending on your design */
+  height: 50px;      
   width: auto;       /* keeps the image proportion correct */
   object-fit: contain;
   margin-right: 10px;
@@ -191,4 +192,8 @@
   height: auto;
   display: block;
   object-fit: contain;
+}
+
+.main__content h1{
+    text-align: center;
 }
