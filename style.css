@@ -151,12 +151,12 @@
     .navbar__toggle .bar{
         display: block;
         cursor: pointer;
-        background: #fff;
+        
 
     }
     #mobile-menu.is-active .bar:nth-child(2){
         opacity:0;
-        background-color: white;
+        color: white;
     }
 
     #mobile-menu.is-active .bar:nth-child(1){
@@ -167,6 +167,11 @@
        transform: translateY(-8px) rotate(-45deg);
        color: white;
     }
+     #mobile-menu.is-active .bar:nth-child(4){
+       transform: translateY(-8px) rotate(-45deg);
+       color: white;
+    }
+    
 }
 /* .bar {
   display: block;
@@ -175,4 +180,15 @@
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: #fff; Or any color that contrasts with your background} */
-
+.logo-img {
+  height: 50px;      /* or adjust to 40px, 60px depending on your design */
+  width: auto;       /* keeps the image proportion correct */
+  object-fit: contain;
+  margin-right: 10px;
+}
+.bg-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
