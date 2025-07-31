@@ -83,7 +83,7 @@
     width: 100%;
 }
 
-@media  screen and(max-width: 960px) {
+@media  screen and (max-width: 960px) {
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -100,8 +100,8 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        /* top: -1000px;
-        opacity: 0; */
+        top: -1000px;
+        opacity: 0; 
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
@@ -121,7 +121,7 @@
         padding-left: 25px;
 
     }
-    .navbar_toggle .bar{
+    .navbar__toggle .bar{
         width: 25px;
         height: 3px;
         margin: 5px auto;
@@ -131,6 +131,8 @@
 
     .navbar__item{
         width: 100%;
+        text-align: center;
+        margin: 16px 0;
     }
     .navbar__links{
         text-align: center;
@@ -146,20 +148,31 @@
         transform: translate(5%, 20%);
     }
 
-    .navbar_toggle .bar{
+    .navbar__toggle .bar{
         display: block;
         cursor: pointer;
+        background: #fff;
 
     }
     #mobile-menu.is-active .bar:nth-child(2){
         opacity:0;
+        background-color: white;
     }
 
     #mobile-menu.is-active .bar:nth-child(1){
        transform: translateY(8px) rotate(45deg);
+       color: white;
     }
     #mobile-menu.is-active .bar:nth-child(3){
        transform: translateY(-8px) rotate(-45deg);
+       color: white;
     }
 }
+/* .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff; Or any color that contrasts with your background} */
 
