@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "MBCorpo Text", DaimlerCS-Regular, DaimlerCSArab-Regular, sans-serif;
+    
 }
 .navbar{
     background-color: #131313;
@@ -14,6 +14,7 @@
     position: sticky;
     top: 0;
      z-index: 999; /*this is to ensure everything is above the content */
+     font-family: "MBCorpo Text", DaimlerCS-Regular, DaimlerCSArab-Regular, sans-serif;
 }
 
 .navbar__container{
@@ -194,6 +195,26 @@
   object-fit: contain;
 }
 
-.main__content h1{
-    text-align: center;
+.animated-heading {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif; /* or any fancy font */
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  border-right: 2px solid white;
 }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+
